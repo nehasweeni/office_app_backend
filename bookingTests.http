@@ -1,0 +1,32 @@
+GET http://localhost:8080/getCurrentBookingsOfUser/3
+Accept: application/json
+
+###
+GET http://localhost:8080/getPreviousBookingsOfUser/3
+Accept: application/json
+
+###
+GET http://localhost:8080/getBookingsByUserID
+Accept: application/json
+
+###
+
+GET http://localhost:8080/all_bookings
+Accept: application/json
+
+###
+
+POST http://localhost:8080/add-Booking
+Content-Type: application/json
+
+{
+  "booking_id": null,
+  "booking_date": "2021-11-25",
+  "userID": 3,
+  "officeID": 4
+}
+
+###
+
+DELETE http://localhost:8080/deleteBooking
+

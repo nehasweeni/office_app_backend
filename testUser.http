@@ -1,0 +1,40 @@
+GET http://localhost:8080/findUserById/4
+Accept: application/json
+
+###
+GET http://localhost:8080/getAllData
+Accept: application/json
+
+###
+
+GET http://localhost:8080/getBookingsByUserID
+Accept: application/json
+
+###
+
+GET http://localhost:8080/findById;
+Accept: application/json
+
+###
+
+###
+
+PUT http://localhost:8080/updateUser
+Content-Type: application/json
+
+{
+  "id": null,
+  "name": "Neha Sweenarain",
+  "email": "neha.sweenaraingmail.com",
+  "password": "neha.sweenarain"
+}
+
+###
+
+GET http://localhost:8080/all_users;
+
+###
+
+DELETE http://localhost:8080/deleteUser;
+
+

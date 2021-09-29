@@ -1,0 +1,55 @@
+GET http://localhost:8080/getAllPositiveRatings
+Accept: application/json
+
+###
+GET http://localhost:8080/getAllNeutralRatings
+Accept: application/json
+
+###
+GET http://localhost:8080/getAllNegativeRatings
+Accept: application/json
+
+###
+GET http://localhost:8080/getRatingBasedOnOfficeID/4
+Accept: application/json
+
+###
+GET http://localhost:8080/getRatingBasedOnUserID/3
+Accept: application/json
+
+###
+GET http://localhost:8080/all_ratings
+Accept: application/json
+
+###
+POST http://localhost:8080/add_Rating
+Content-Type: application/json
+
+{
+  "rating_id": null,
+  "rating":5,
+  "booking_id": 15,
+  "comments": "Best quality service!",
+  "rating_date": "2021-05-29"
+}
+
+###
+PUT http://localhost:8080/update-Rating/15
+Content-Type: application/json
+
+{
+  "rating_id": 12,
+  "rating":4,
+  "booking_id": 15,
+  "comments": "Best quality service!",
+  "rating_date": "2019-05-05"
+}
+
+###
+DELETE http://localhost:8080/deleteRating/15
+
+###
+
+
+
+
